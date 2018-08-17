@@ -31,7 +31,7 @@ func myFunction(param1, param2 int){
 ```
 ## Function return types
 
-Function return types are specified after last parenthesis and before the first bracket. 
+Function return types are specified after the last parenthesis and before the first bracket. 
 
 ```go
 func add(x, y int) int {

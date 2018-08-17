@@ -25,7 +25,7 @@ The cases are evaluated from top to bottom until one matches the switch conditio
 
 The condition expression doesn't have to be a constant or an int, it can be of any type. The case values don't have to be constants either, they can be evaluated expressions.
 
- If none of the cases match, the default case will be chosen. Only one case will ever be run, so there is no need to use break statements. 
+If none of the cases match, the default case will be chosen. Only one case will ever be run, so there is no need to use break statements. 
 
 ## Cases with multiple values
 
@@ -71,7 +71,7 @@ switch a:=2; a {
 
 ## Switch with no condition
 
-Switch statements with no condition are treated the same as `switch true`. This effectively acts like a cleaner if-else statement.
+Switch statements with no condition are treated the same as `switch true`. This means that the first case that evaluates to true will be chosen. This effectively acts like an if-else statement with different syntax.
 
 ```go
 
