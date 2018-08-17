@@ -15,8 +15,6 @@ func main() {
 	defer fmt.Println("later")
 	fmt.Println("now")
 }
-
-
 ```
 
 ## Stacking defers
@@ -35,5 +33,4 @@ func main() {
     defer fmt.Print("4 ")
 }
 // outputs 4 3 2 1
-
 ```

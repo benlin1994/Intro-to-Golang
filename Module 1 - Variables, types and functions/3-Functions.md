@@ -37,7 +37,6 @@ Function return types are specified after the last parenthesis and before the fi
 func add(x, y int) int {
     return x + y
 }
-
 ```
 
 ## Multiple return types
@@ -63,8 +62,6 @@ var a,_ = myFunction() //a = 5
 var _,b = myFunction() //b = "five"
 var a = myFunction() //doesn't work
 ```
-
-
 
 
 ## Named return types

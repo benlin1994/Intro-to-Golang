@@ -61,3 +61,7 @@ Go has the following symbols used for pointers:
 Go has the following symbol used for channels:
 
 * `<-` send/receive data from a channel
+
+## Nil
+
+Go has a `nil` value that represents a zero value for uninitialized pointers, maps, slices, interfaces, functions and channels 

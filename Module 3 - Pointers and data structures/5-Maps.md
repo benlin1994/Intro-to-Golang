@@ -2,7 +2,7 @@
 
 ## Maps
 
-Maps are a data structure that holds key value pairs. To create a map, use the `make()` method:
+Maps are data structures that hold key value pairs.
 
 ## Declaring a map
 
@@ -12,9 +12,9 @@ A map can be declared using the following syntax:
 var m map[string] int
 ```
 
-The key type is specified in the brackets while the value types are specified after the brackets.
+The key type is specified in the brackets while the value type is specified after the brackets.
 
-An unitialized map has a value of `nil`
+An unitialized map has a value of `nil`.
 
 ## Initialing a map with a map literal
 
@@ -38,10 +38,9 @@ Map values can be accessed and modified through their keys:
 
 ```go
     m := map[string] int{"a": 1, "b": 2, "c": 3} 
-    fmt.println(map["a"]) //prints 1
+    fmt.println(m["a"]) //prints 1
     map["a"] = 111 
-    fmt.println(map["a"]) //prints 111
-
+    fmt.println(m["a"]) //prints 111
 ```
 
 ## Deleting map key-value pairs
@@ -60,7 +59,7 @@ If a key is not present in a map, accessing that key will result in the zero val
 
 ```go
     m := map[string] int{"a": 1, "b": 2, "c": 3} 
-    val := map["d"] // "d" does not exist as a key
+    val := m["d"] // "d" does not exist as a key
     fmt.println(val) //prints "", the zero value of a string
 ```
 

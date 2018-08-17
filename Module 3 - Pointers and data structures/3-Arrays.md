@@ -10,8 +10,6 @@ var a[5] int
 Unitialized arrays have their values initialized to their type's zero values. Arrays have their length defined upon initialization. Arrays can not be resized and can only hold up to their length.
 
 
-
-
 ## Accessing and modifying array values
 
 Array values can be accessed and modified through their index:
@@ -78,3 +76,5 @@ for _, val := range array{
     fmt.Printf(val)
 }
 ```
+
+The `range` statement can also be used for slices and maps. For maps, the first variable holds keys instead of indexes.

@@ -22,7 +22,7 @@ Use the following syntax to declare a struct:
     point := Point{} // point is of type Point
 ```
 
-Uninitialized Struct fields are initialized to their type's zero value.
+Uninitialized struct fields are initialized to their type's zero value.
 
 ## Accessing and modifying the fields of a struct
 
@@ -36,12 +36,11 @@ Struct fields can be accessed and modified with the `.` notation:
     point.Y = 4
     fmt.Println(point.X) //prints 2
     fmt.Println(point.Y) //prints 4
-
 ```
 
 ## Initializing a struct with struct literals
 
-Struct literals are used to initialize a structs fields. They are used with the following syntax:
+Struct literals are used to initialize a struct's fields. They are used with the following syntax:
 
 ```go
     point := Point{2, 4}  // v1 has type Point, 

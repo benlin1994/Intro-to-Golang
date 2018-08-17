@@ -5,10 +5,11 @@
 
 ```go
 if x < 0 {
-    //do something
-}
-else {
-    //do something else
+    fmt.Println("negative")
+}else if x > 0 {
+    fmt.Println("positive")
+}else {
+    fmt.Println("zero")
 }
 ```
 
@@ -21,13 +22,9 @@ Like `for` loops, `if` statements can start with a short statement to execute be
 ```go
 
 if x := getStatus(); x == true {
-    //do something
-}
-else if {
-    //do something else
-}
-else {
-    //do something else 
+    fmt.Println("Active")
+}else {
+    fmt.Println("Not active")
 }
 
 ```

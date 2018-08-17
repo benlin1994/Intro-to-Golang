@@ -22,10 +22,9 @@ Slices can be initialized by specifying a subsection of an array:
 ```go
     arr := [10]int{1,2,3,4,5,6,7,8,9,10}
     var s []int = arr[2:5] //slice from 2nd to 5th index (not including 5th)
-    s2 := arr[0:2] //short declaration format
+    s2 := arr[0:2] //short declaration works too
     fmt.Println(s) //prints [3 4 5]
     fmt.Println(s2) //prints [1 2]
-
 ```
 
 The array subsection that the slice references is specified by a start and end index. The slice will contain values starting from the start index and ending with the value right before the end index. You can not use negative slice indexes.

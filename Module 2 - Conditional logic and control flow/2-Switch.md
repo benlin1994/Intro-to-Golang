@@ -5,20 +5,18 @@
 Switch statements have the following syntax:
 
 ```go
-
 a ;= 2
 
 switch a {
     case 1:
-        fmt.println("case 1")
+        fmt.Println("case 1")
     case 2:
-        fmt.println("case 2")
+        fmt.Println("case 2")
     case 3:
-        fmt.println("case 3")
+        fmt.Println("case 3")
     default: 
-        fmt.println("none")
+        fmt.Println("none")
 }
-
 ```
 
 The cases are evaluated from top to bottom until one matches the switch condition expression. 
@@ -32,20 +30,18 @@ If none of the cases match, the default case will be chosen. Only one case will 
 Switch statement cases can have multiple values separated by commas. If any of them match the switch condition expression, then that case will be chosen.
 
 ```go
-
 a ;= 5
 
 switch a {
     case 1,2,3:
-        fmt.println("small")
+        fmt.Println("small")
     case 4,5,6:
-        fmt.println("medium")
+        fmt.Println("medium")
     case 7,8,9:
-        fmt.println("large")
+        fmt.Println("large")
     default: 
-        fmt.println("out of range")
+        fmt.Println("out of range")
 }
-
 ```
 
 ## Short statements
@@ -53,37 +49,31 @@ switch a {
 Switch statements can have short statements before the switch condition expression.
 
 ```go
-
-
 switch a:=2; a {
     case 1:
-        fmt.println("case 1")
+        fmt.Println("case 1")
     case 2:
-        fmt.println("case 2")
+        fmt.Println("case 2")
     case 3:
-        fmt.println("case 3")
+        fmt.Println("case 3")
     default: 
-        fmt.println("none")
+        fmt.Println("none")
 }
-
-
 ```
 
 ## Switch with no condition
 
-Switch statements with no condition are treated the same as `switch true`. This means that the first case that evaluates to true will be chosen. This effectively acts like an if-else statement with different syntax.
+Switch statements with no condition are treated the same as `switch true`. This means that the first case that evaluates to `true` will be chosen. This effectively acts like an if-else statement with different syntax.
 
 ```go
 
 a := 42 
 switch {
     case a > 0:
-        fmt.println("positive")
+        fmt.Println("positive")
     case a < 0 :
-        fmt.println("negative")
+        fmt.Println("negative")
     default: 
-        fmt.println("zero")
+        fmt.Println("zero")
 }
-
-
 ```
