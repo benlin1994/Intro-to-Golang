@@ -23,6 +23,12 @@ You can specify a specific file or files to build as well:
 go build filename.go
 ```
 
+You can run the executable by doing the following:
+
+```shell
+./filename
+```
+
 ### go run
 
 The `go run filename.go` command will compile and run a specified file. The specified file needs a `main` package for it to run. The executable will be deleted after it runs.
@@ -45,6 +51,11 @@ You can specify a specific file or files to build as well:
 go install filename.go
 ```
 
+You can run the executable by doing the following:
+
+```shell
+./filename
+```
 
 ## Other tools
 
