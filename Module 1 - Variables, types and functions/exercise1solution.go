@@ -1,8 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
 
 //radiusToCirc
 func radiusToCirc(rad float64) float64{
